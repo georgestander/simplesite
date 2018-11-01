@@ -1,0 +1,18 @@
+
+  fieldset{
+     width: 450px;
+     clear: both;
+     padding: 5px;
+  }
+  legend{
+     font-size: 30px;
+  }
+     
+  label{
+     text-align: right;
+     width: 100px;
+     float: left;
+  }
+  input{
+     width: 200px; 
+  }
