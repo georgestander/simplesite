@@ -4,37 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Sign Up</title>
-     <!-- 
-
- Copy and paste this into the head
-
- -->
-
-<style type="text/css">
-    fieldset{
-       width: 450px;
-       clear: both;
-       padding: 5px;
-    }
-    legend{
-        background-color: #000;
-        color: #fff;
-        padding: 3px 6px;
-    }
-       
-    label{
-       text-align: right;
-       width: 100px;
-       float: left;
-    }
-    input{
-       width: 200px; 
-    }
- 
- </style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Sign up</h1>
@@ -67,7 +38,40 @@
         <input type="tel" id="telephone" placeholder="123-123-1234"
         pattern="[0-9]{3}-[09]{3}-[0-9]{4}"
         required>
+        <br>
         
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>International Submission</legend>
+        <br>
+        <label for="passport">Passport:</label>
+        <input type="text" id="passport" placeholder="1234567891234"
+        pattern="[0-9]{13}" min="13" required>
+        <br>
+        <br>
+        <label for="weight">Lugage weight:</label>
+        <input type="range" list="tickmarks">
+
+        <datalist id="tickmarks">
+          <option value="0" label="0%">
+          <option value="10">
+          <option value="20">
+          <option value="30">
+          <option value="40">
+          <option value="50" label="50%">
+          <option value="60">
+          <option value="70">
+          <option value="80">
+          <option value="90">
+          <option value="100" label="100%">
+        </datalist>
+    
+
+
+
+
+
     </fieldset>
     
     
