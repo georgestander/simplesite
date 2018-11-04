@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+    src="/path/to/shared/js/modernizr.com/Modernizr-2.5.3.forms.js">
+</script>
+
+<script type="text/javascript"
+        data-webforms2-support="date"
+        data-lang="en"
+        src="/path/to/html5Forms/shared/js/html5Forms.js" > 
+
+</script>
+    
+
+</head>
+<body>
+    <h1>Sign up</h1>
+    <a href="index.html">Home</a>
+    <br>
+    <br>
+    <form action="/handeling-page" method="post" autocomplete="off">
+    <fieldset>
+        <legend>Sign up</legend>
+        <br>
+        <label for="name">First name:</label>
+        <input type="text" id="name" placeholder="Bob" required autofocus>
+        <br>
+        <label for="lastname">Last name:</label>
+        <input type="text" id="lastname" placeholder="Smith"  required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="email@email.com" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required maxlength="20">
+        <br>
+        <label for="website">Website:</label>
+        <input type="url" id="website">
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="min 16; max 65" min="16" max="65">
+        <br>
+        <label for="telephone">Telephone nr:</label>
+        <input type="tel" id="telephone" placeholder="123-123-1234"
+        pattern="[0-9]{3}-[09]{3}-[0-9]{4}"
+        required>
+        <br>
+        
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>International Submission</legend>
+        <br>
+        <label for="passport">Passport:</label>
+        <input type="text" id="passport" placeholder="1234567891234"
+        pattern="[0-9]{13}" required>
+        <br>
+        <br>
+        <label for="weight">Lugage weight:</label>
+        <input type="range" list="tickmarks" id="weight">
+
+        <datalist id="tickmarks">
+          <option value="0" label="0kg">
+          <option value="10">
+          <option value="20">
+          <option value="30">
+          <option value="40">
+          <option value="50" label="50kg">
+          <option value="60">
+          <option value="70">
+          <option value="80">
+          <option value="90">
+          <option value="100" label="100kg">
+        </datalist>
+        <br>
+        
+            <p><strong>Flight Date</strong></p>
+        
+            <div>
+                <label for="flight_time">Date/time:</label>
+                <input type="datetime-local" id="flight_time"
+                       name="flight_time" value="2018-06-12T19:30"
+                       min="2018-06-07T00:00" max="2018-06-14T00:00" />
+            </div>
+        
+            <label for="hand_lugage">Hand Lugage:</label>
+            <select id="hand_lugage">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <br>
+            <label for="currency_choice">Currency:</label>
+            <input list="currency" id="currency_choice" name="currency_choice">
+            <datalist id="currency">
+                <option value="Pound">
+                <option value="Dollar">
+                <option value="Euro">
+                <option value="Zar">
+            </datalist>
+            <br>
+            <label for="pet-select">Choose your browser:</label>
+
+            <select id="pet-select">
+                <option value="">--Please choose an option--</option>
+                <option value="edge">Microsoft Edge</option>
+                <option value="firefozx">Firefox</option>
+                <option value="chrome">Chrome</option>
+                <option value="safari">Safari</option>
+                <option value="opera">Opera</option>
+            </select>   
+            <br><br>
+            <p><strong>Select beverage:</strong></p>
+            <div>
+                    <input type="radio" id="soda"
+                           name="beverage" value="soda" checked />
+                    <label for="soda">Soda</label>
+                </div>
+        
+                <div>
+                    <input type="radio" id="juice"
+                           name="beverage" value="juice" />
+                    <label for="juice">Juice</label>
+                </div>
+        
+                <div>
+                    <input type="radio" id="coffee"
+                           name="beverage" value="coffee" />
+                    <label for="coffee">Coffee</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="tea"
+                            name="beverage" value="tea"/>
+                    <label for="tea">Tea</label>        
+                </div>
+                <br>
+                
+                <p><strong>Pick snacks:</strong></p>
+
+                <div>
+                    <input type="checkbox" id="chips" name="food"
+                    value="food" checked/>
+                    <label for="chips">Crisps</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" id="nuts" name="food"
+                    value="food"/>
+                    <label for="nuts">Mixed nuts</label>
+                    </div>
+                
+                <div>
+                    <input type="checkbox" id="dinner" name="food"
+                    value="food"/>
+                    <label for="dinner">Small cheese platter</label>
+                </div>
+                <br>
+                <p><strong>Please choose colour of blanket</strong></p>
+                <div>
+                    <input type="color" id="number1" name="color" value="#090C9B"/>
+                    <label for="number1">Option1</label>
+                </div>
+                
+                <div>
+                        <input type="color" id="number2" name="color" value="#6D454C"/>
+                        <label for="number2">Option2</label>
+                </div>
+                <br>
+                
+                
+                
+    </fieldset>
+
+    <input type="submit" value="Submit">
+    
+    
+    </form>
+</body>
+</html>
